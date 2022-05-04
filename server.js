@@ -46,6 +46,7 @@ router.post("/auth", function(req,res){
         res.status(400).json({ error: "Missing username and/or password"});
         return;
      }
+     //test
 
     User.findOne({username: req.body.username}, function(err,user){
         //connection or server err
